@@ -1,0 +1,29 @@
+---------------------------
+Khan academy SQL course
+---------------------------
+/** Grocery list:
+Bananas (4)
+Peanut Butter (1)
+Dark Chocolate Bars (2)
+**/
+=============
+EXERCISE 1
+=============
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER );
+
+INSERT INTO groceries VALUES (1, "Bananas", 4);
+INSERT INTO groceries VALUES (2, "Peanut Butter", 1);
+INSERT INTO groceries VALUES (3, "Dark chocolate bars", 2);
+SELECT * FROM groceries;
+
+---------------------------
+=============
+EXERCISE 2
+=============
+CREATE TABLE BOOKS(id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO BOOKS VALUES(1, "Book 1", 4);
+INSERT INTO BOOKS VALUES(2, "Book 2", 5);
+INSERT INTO BOOKS VALUES(3, "Book 3", 6);
+SELECT * FROM BOOKS;
+---------------------------

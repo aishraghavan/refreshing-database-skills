@@ -1,0 +1,22 @@
+create table items(id integer primary key, name text, color text,price integer, available integer, aisle integer);
+
+insert into items values(1, "Bike", "Blue",50, 5, 1);
+insert into items values(2, "Bike", "Black",60, 3, 1);
+insert into items values(3, "Checkers Game", "Board",20, 2, 1);
+insert into items values(4, "Chess Game", "Board",25, 4, 1);
+insert into items values(5, "Bag", "Pink",45, 1, 1);
+insert into items values(6, "Bag", "Blue",56, 1, 1);
+insert into items values(7, "Bag", "Black",70, 1, 1);
+insert into items values(8, "Cookware", "Black and white",90, 1, 1);
+insert into items values(9, "Cookware", "Grey and white",100, 1, 1);
+insert into items values(10, "Decorative item", "white",10, 1, 1);
+insert into items values(11, "Decorative item", "green",150, 1, 1);
+insert into items values(12, "Dress 1", "white",210, 1, 1);
+insert into items values(13, "Dress 2", "blue",150, 1, 1);
+insert into items values(14, "Accessories", "green",20, 1, 1);
+insert into items values(15, "Accessories", "yellow",15, 1, 1);
+
+
+select * from items;
+select * from items order by price;
+select name,sum(price) from items group by name;
